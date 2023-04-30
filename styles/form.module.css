@@ -1,0 +1,53 @@
+.sectionForm {
+  display: flex;
+  max-width: 85%;
+  flex-direction: column;
+  align-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.headerForm {
+  font-size: x-large;
+  margin-bottom: 1rem;
+}
+.articleForm {
+  font-family: "Rasputin";
+  font-weight: 400;
+  background-color: rgba(217, 217, 217, 0.2);
+  padding: 2rem;
+  border-radius: 10px;
+}
+.inputForm {
+  border-radius: 5px;
+  background-color: rgb(238, 232, 224);
+  color: rgb(26, 22, 22);
+}
+.divider {
+  border-right: 6px solid rgba(128, 0, 128, 0.7);
+  height: 3rem;
+  margin-top: 0.45rem;
+  margin-bottom: 0.45rem;
+}
+.buttonForm {
+  background-color: rgba(224, 199, 130, 0.7);
+  color: rgb(109, 92, 80);
+  font-family: "HalfbreD";
+  font-size: large;
+  font-weight: 600;
+  margin-top: 2rem;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+  justify-content: center;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 200ms;
+}
+.buttonForm:hover {
+  transition: 200ms;
+  background-color: rgba(226, 209, 161, 0.85);
+  color: rgb(167, 61, 0);
+  box-shadow: 0px 7px 7px rgba(255, 255, 255, 0.25);
+}
