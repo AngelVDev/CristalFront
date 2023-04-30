@@ -3,6 +3,10 @@ export const Routes = {
     path: "/",
     name: "Landing",
   },
+  Form: {
+    path: "/registrarse",
+    name: "Registro",
+  },
 };
 
 export interface Route {
