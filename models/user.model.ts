@@ -9,7 +9,7 @@ export interface User {
   email: string;
   password: string;
   signo?: string;
-  personasEnConsulta: string[];
+  personasEnConsulta?: string[];
   referencia?: string;
   notas?: string;
 }

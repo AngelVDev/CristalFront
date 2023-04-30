@@ -10,7 +10,7 @@ export interface Turno {
     | "Confirmado"
     | "Transferido"
     | "Terminado";
-  personasEnConsulta: Persona;
+  personasEnConsulta?: Persona;
   referencia: string;
   notas: string;
 }
