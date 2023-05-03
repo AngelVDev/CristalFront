@@ -5,11 +5,22 @@
   padding: 6rem;
   justify-content: flex-start;
 }
+.logoLanding {
+  position: absolute;
+  z-index: 0;
+  transition: 180ms;
+}
+.logoLanding:hover {
+  filter: blur(3px);
+  transition: 180ms;
+}
 .header {
   font-family: "HalfbreD";
   letter-spacing: 5px;
   font-size: x-large;
   position: relative;
+  top: 15%;
+  z-index: 10;
 }
 .subheader {
   font-family: "Rasputin";
@@ -17,15 +28,21 @@
   font-weight: 500;
 }
 .landingButton {
-  background-color: rgba(217, 217, 217, 0.2);
+  background-color: hsla(260, 100%, 81%, 0.4);
   font-family: "HalfbreD";
   font-size: large;
   margin-top: 2rem;
   letter-spacing: 1px;
   border-radius: 25px;
   border: none;
-  width: 30%;
+  width: 15rem;
+  transition: 180ms;
   justify-content: center;
   padding: 0.5rem 1rem 0.5rem 1rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+.landingButton:hover {
+  transition: 180ms;
+  box-shadow: 0px 7px 7px rgba(255, 255, 255, 0.25);
 }
