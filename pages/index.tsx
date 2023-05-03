@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import React from "react";
 import Landing from "./Landing";
-import Form from "./Form";
+// import Form from "./Form";
 
 export default function Home(): React.ReactNode {
   return (
@@ -15,7 +15,7 @@ export default function Home(): React.ReactNode {
       </Head>
       <main className={styles.main}>
         <Landing />
-        <Form />
+        {/* <Form /> */}
       </main>
       <footer />
     </>
