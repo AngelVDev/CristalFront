@@ -1,8 +1,12 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import React from "react";
-import Landing from "./Landing";
-// import Form from "./Form";
+import Footer from "../components/Footer";
+import dynamic from "next/dynamic";
+
+const DynamicComponentWithNoSSR = dynamic(() => import("./Landing"), {
+  ssr: false,
+});
 
 export default function Home(): React.ReactNode {
   return (
@@ -14,10 +18,9 @@ export default function Home(): React.ReactNode {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Landing />
-        {/* <Form /> */}
+        <DynamicComponentWithNoSSR />
       </main>
-      <footer />
+      <Footer />
     </>
   );
 }

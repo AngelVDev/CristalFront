@@ -6,7 +6,10 @@ import logoCristal from "/public/logocristal.png";
 
 import Login from "../components/Login";
 
-function Landing(): React.ReactElement {
+function Landing() {
+  if (typeof window !== "undefined") {
+    var dialog: any = document.getElementById("#modalDialog");
+  }
   return (
     <>
       <Image
@@ -23,7 +26,7 @@ function Landing(): React.ReactElement {
       </header>
       <button
         className={styles.landingButton}
-        onClick={() => document.querySelector("#modalDialog")?.showModal()}
+        onClick={() => dialog.showModal()}
       >
         Entrar
       </button>
