@@ -5,11 +5,11 @@ import Image from "next/image";
 import logoCristal from "/public/logocristal.png";
 
 import Login from "../components/Login";
+import Form from "../components/Form";
 
 function Landing() {
-  if (typeof window !== "undefined") {
-    var dialog: any = document.getElementById("#modalDialog");
-  }
+  const dialog: any = document.getElementById("modalDialog");
+  const formDialog: any = document.getElementById("formDialog");
   return (
     <>
       <Image
@@ -33,7 +33,15 @@ function Landing() {
       <dialog id="modalDialog" className={styles.formContainer}>
         <Login />
       </dialog>
-      <button className={styles.landingButton}>Registrarse</button>
+      <button
+        className={styles.landingButton}
+        onClick={() => formDialog.showModal()}
+      >
+        Registrarse
+      </button>
+      <dialog id="formDialog">
+        <Form />
+      </dialog>
     </>
   );
 }

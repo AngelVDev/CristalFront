@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import React from "react";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/Footer";
 import dynamic from "next/dynamic";
 
 const DynamicComponentWithNoSSR = dynamic(() => import("./Landing"), {
