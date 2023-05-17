@@ -1,0 +1,5 @@
+.footer {
+  display: flow-root;
+  flex-direction: row;
+  width: 100%;
+}
