@@ -8,8 +8,10 @@ import Login from "../components/Login";
 import Form from "../components/Form";
 
 function Landing() {
-  const dialog: any = document.getElementById("modalDialog");
-  const formDialog: any = document.getElementById("formDialog");
+  if (typeof window !== "undefined") {
+    var dialog: any = document.getElementById("modalDialog");
+    var formDialog: any = document.getElementById("formDialog");
+  }
   return (
     <>
       <Image
