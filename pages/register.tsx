@@ -2,7 +2,7 @@ import React from "react";
 // import { User } from "../models/user.model";
 import styles from "../styles/form.module.css";
 
-function Form() {
+function Register() {
   return (
     <section className={styles.sectionForm}>
       <header className={styles.headerForm}>Registro</header>
@@ -46,4 +46,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default Register;

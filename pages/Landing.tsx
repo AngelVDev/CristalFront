@@ -3,15 +3,9 @@ import styles from "../styles/Home.module.css";
 import Image from "next/image";
 
 import logoCristal from "/public/logocristal.png";
-
-import Login from "../components/Login";
-import Form from "../components/Form";
+import Link from "next/link";
 
 function Landing() {
-  if (typeof window !== "undefined") {
-    var dialog: any = document.getElementById("modalDialog");
-    var formDialog: any = document.getElementById("formDialog");
-  }
   return (
     <>
       <Image
@@ -26,24 +20,12 @@ function Landing() {
         <h1>Cristal de Luna</h1>
         <p className={styles.subheader}>TAROT</p>
       </header>
-      <button
-        className={styles.landingButton}
-        onClick={() => dialog.showModal()}
-      >
+      <Link className={styles.landingButton} href="/login">
         Entrar
-      </button>
-      <dialog id="modalDialog" className={styles.formContainer}>
-        <Login />
-      </dialog>
-      <button
-        className={styles.landingButton}
-        onClick={() => formDialog.showModal()}
-      >
+      </Link>
+      <Link className={styles.landingButton} href="/register">
         Registrarse
-      </button>
-      <dialog id="formDialog">
-        <Form />
-      </dialog>
+      </Link>
     </>
   );
 }
