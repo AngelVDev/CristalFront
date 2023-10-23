@@ -3,16 +3,18 @@ import styles from "./footer.module.css";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <section>
-        <p>Instagram</p>
-        <p>TikTok</p>
-        <p>Facebook</p>
+      <section className={styles.section}>
+        <p className={styles.item}>Instagram</p>
+        <p className={styles.item}>TikTok</p>
+        <p className={styles.item}>Facebook</p>
       </section>
-      <section>
-        <p>Cookies</p>
-        <p>Privacidad</p>
+      <section className={styles.section}>
+        <p className={styles.item}>Cookies</p>
+        <p className={styles.item}>Privacidad</p>
       </section>
-      Copyright 2023 Cristal De Luna Tarot
+      <section className={styles.finalSection}>
+        Copyright 2023 Cristal De Luna Tarot
+      </section>
     </footer>
   );
 };
