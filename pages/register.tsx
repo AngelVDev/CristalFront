@@ -1,13 +1,14 @@
 import React from "react";
 // import { User } from "../models/user.model";
 import styles from "../styles/form.module.css";
+import Link from "next/link";
 
 function Register() {
   return (
     <section className={styles.sectionForm}>
       <header className={styles.headerForm}>Registro</header>
       <article className={styles.articleForm}>
-        <form>
+        <form className={styles.realForm}>
           <label>Nombre</label>
           <input className={styles.inputForm} type="text" name="name" />
           <label>E-mail</label>
@@ -26,7 +27,7 @@ function Register() {
           <input className={styles.inputForm} type="text" name="residence" />
           <label>Fecha de nacimiento</label>
           <input className={styles.inputForm} type="text" name="birth" />
-          <div className={styles.divider}></div>
+          {/* <div className={styles.divider}></div> */}
           <label>Teléfono</label>
           <input className={styles.inputForm} type="text" name="phone" />
           <label>Tiktok</label>
@@ -41,6 +42,9 @@ function Register() {
           <input className={styles.inputForm} type="text" name="notas" />
           <button className={styles.buttonForm}>Registro</button>
         </form>
+        <Link className={styles.buttonForm} href={"/"}>
+          Volver
+        </Link>
       </article>
     </section>
   );
