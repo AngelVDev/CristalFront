@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/login.module.css";
+import Link from "next/link";
 
 const Login = () => {
   return (
@@ -8,12 +9,12 @@ const Login = () => {
       <input className={styles.inputs} type="text" />
       <label>Contraseña</label>
       <input className={styles.inputs} type="password" />
-      <button className={styles.formButton} formMethod="dialog" type="submit">
-        Cancelar
-      </button>
       <button className={styles.formButton} type="submit">
         Confirmar
       </button>
+      <Link className={styles.formButton} href={"/"}>
+        Volver
+      </Link>
     </form>
   );
 };
