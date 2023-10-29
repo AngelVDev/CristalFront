@@ -1,7 +1,6 @@
 import React from "react";
-import styles from "../styles/Home.module.css";
+import styles from "../../styles/landing.module.css";
 import Image from "next/image";
-
 import logoCristal from "/public/logocristal.png";
 import Link from "next/link";
 

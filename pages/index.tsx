@@ -1,10 +1,10 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/landing.module.css";
 import React from "react";
 import Footer from "../components/Footer/Footer";
-import Landing from "./landing";
+import Landing from "../components/Landing/landing";
 
-export default function Home(): React.ReactNode {
+export default function FirstPage(): React.ReactNode {
   return (
     <>
       <Head>
