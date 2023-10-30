@@ -1,0 +1,13 @@
+.lecturas_header{
+    font-size: xx-large;
+    font-weight: 600;
+    font-family: 'HalfbreD', Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1rem 0;
+}
+.cards_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #545454;
+}
